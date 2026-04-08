@@ -40,9 +40,26 @@
 
 **📝 Respuesta:**
 
-<!-- Escribe aquí tu respuesta a la Pregunta 1 -->
+Explicacion:
+
+git clone: Comando de Git que se usa para copiar un repositorio remoto (en GitHub u otro servidor) a tu máquina local. Descarga todo el historial y crea una copia completa para trabajar.
+
+fork: Acción en GitHub que crea una copia del repositorio en tu propia cuenta. Sirve para proponer cambios al proyecto original mediante pull requests o para tener tu propia versión independiente.
+
+git pull: Comando de Git que actualiza tu repositorio local trayendo los cambios más recientes desde el remoto y fusionándolos con tu rama actual.
 
 ---
+
+### Evidencias
+  
+  ![Pregunta1](images/cp1.png)
+   ![Pregunta1](images/cp2.png)
+    ![Pregunta1](images/cp3.png)
+     ![Pregunta1](images/cp4.png)
+      ![Pregunta1](images/cp5.png)
+
+
+
 
 ## Pregunta 2 (1 punto)
 
