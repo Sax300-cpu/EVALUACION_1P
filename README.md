@@ -215,6 +215,8 @@ Escalabilidad: Es ideal para proyectos grandes y de larga duración, donde la co
 
 ![Pregunta4](images/cp11.png)
 ![Pregunta4](images/cp12.png)
+![Pregunta4](images/cp13.png)
+![Pregunta4](images/cp14.png)
 <!-- Escribe aquí tu respuesta completa a la Pregunta 4 -->
 
 ---
@@ -248,7 +250,66 @@ Escalabilidad: Es ideal para proyectos grandes y de larga duración, donde la co
 
 **📝 Respuesta:**
 
-<!-- Escribe aquí tu respuesta completa a la Pregunta 5 -->
+# 1. Cambiar a la rama develop
+git checkout develop
+
+# 2. Crear ramaA desde develop
+git checkout -b ramaA
+
+# 3. Crear archivo en ramaA
+echo "Contenido A" > archivoA.txt
+git add archivoA.txt
+git commit -m "Agregar archivoA.txt con Contenido A"
+
+# 4. Volver a develop y crear ramaB
+git checkout develop
+git checkout -b ramaB
+
+# 5. Crear archivo en ramaB con contenido diferente
+echo "Contenido B" > archivoA.txt
+git add archivoA.txt
+git commit -m "Agregar archivoA.txt con Contenido B"
+
+# 6. Intentar fusionar ramaB sobre ramaA (esto genera conflicto)
+git checkout ramaA
+git merge ramaB
+
+## Pregunta 5 (2 puntos)
+
+**Resolver conflictos entre ramas y realizar un Pull Request**
+
+---
+
+### Procedimiento realizado
+
+1. Se creó la rama `ramaA` desde `develop` y se añadió el archivo `archivoA.txt` con el contenido:
+
+2. Se creó la rama `ramaB` desde `develop` y se añadió el mismo archivo `archivoA.txt` pero con el contenido:
+
+3. Al intentar fusionar `ramaB` sobre `ramaA` se generó un **conflicto**, ya que el mismo archivo tenía contenidos distintos en cada rama.
+4. Se resolvió el conflicto editando el archivo y combinando ambos contenidos:
+
+5. Se marcó el conflicto como resuelto y se hizo el commit correspondiente.
+6. Se fusionó la rama `ramaA` hacia `develop` y se subieron los cambios al remoto.
+7. Se creó un **Pull Request** desde `develop` hacia `main` con el título:  
+**"Pregunta 5 - Apellido Nombre"**.
+8. Finalmente, se eliminaron las ramas `ramaA` y `ramaB` en local y remoto (si existían en el remoto).
+
+---
+
+### Explicación
+
+Un **conflicto en Git** ocurre cuando dos ramas modifican el mismo archivo en la misma sección y Git no puede decidir automáticamente qué versión conservar.  
+En este caso, el conflicto se produjo porque `ramaA` y `ramaB` tenían el mismo archivo `archivoA.txt` pero con contenidos diferentes. La solución fue combinar ambos contenidos manualmente y confirmar el cambio.
+
+---
+
+### Evidencias
+
+![Pregunta5](images/cp15.png)
+![Pregunta5](images/cp16.png)
+![Pregunta5](images/cp17.png)
+![Pregunta5](images/cp18.png)
 
 ---
 
