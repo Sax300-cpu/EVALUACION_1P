@@ -1,10 +1,11 @@
-# Universidad [Nombre de la Universidad]  
-## Facultad de [Nombre de la Facultad]  
-### Carrera de [Nombre de la Carrera]  
+# Evaluación Práctica – Primer Parcial
+**Estudiante:** Kevin  
+**Universidad:** [Universidad Tecnica de Ambato]  
+**Carrera:** [Software]  
 
 **Asignatura:** Manejo y Configuración de Software  
-**Nombre del Estudiante:** ___________________________  
-**Fecha:** ___________________  
+**Nombre del Estudiante:** Kevin Velasco
+**Fecha:** 08/04/2026
 
 ---
 
@@ -119,7 +120,57 @@ En este caso se configuró para ignorar:
 
 **📝 Respuesta:**
 
-<!-- Escribe aquí tu respuesta completa a la Pregunta 3 -->
+# 1. Inicializar Git Flow en el repositorio
+git flow init
+# (Aceptar las ramas por defecto: main y develop)
+
+# 2. Crear la rama de tipo feature
+git flow feature start ingresar-encabezado
+
+# 3. Editar el README.md y agregar el encabezado con tus datos personales
+# (ejemplo: Nombre completo, Universidad, Carrera, etc.)
+
+# 4. Hacer al menos un commit durante el desarrollo
+git add README.md
+git commit -m "Agregar encabezado con datos personales en README"
+
+# 5. Finalizar la rama feature siguiendo Git Flow
+git flow feature finish ingresar-encabezado
+
+# 6. Subir los cambios y tags al remoto
+git push origin develop
+git push origin main
+git push origin --tags
+
+# 7. Crear el tag final para la pregunta
+git tag "Pregunta3"
+git push origin main --tags
+
+Proceso seguido
+Inicialización de Git Flow: Se configuró el repositorio para trabajar con las ramas principales main (producción) y develop (desarrollo).
+
+Creación de la rama feature: Se abrió una rama feature/ingresar-encabezado para desarrollar la nueva funcionalidad sin afectar directamente a develop o main.
+
+Desarrollo: Se editó el archivo README.md para completar el encabezado con los datos personales del estudiante.
+
+Commits intermedios: Se realizaron commits para registrar el progreso del desarrollo.
+
+Finalización de la feature: Con git flow feature finish, la rama se fusionó en develop y se eliminó la rama temporal.
+
+Push al remoto: Se subieron los cambios a GitHub en las ramas correspondientes.
+
+Tag final: Se creó el tag "Pregunta3" en el commit final, cumpliendo con la consigna
+
+Reflexión sobre las ventajas de Git Flow
+Organización clara: Git Flow establece un flujo estructurado con ramas específicas para producción (main), desarrollo (develop), nuevas funcionalidades (feature), correcciones rápidas (hotfix) y versiones (release).
+
+Trabajo colaborativo: Facilita que varios desarrolladores trabajen en paralelo sin interferir entre sí, ya que cada funcionalidad se desarrolla en su propia rama.
+
+Control de versiones: Permite mantener un historial ordenado y saber exactamente qué cambios están listos para producción y cuáles aún están en desarrollo.
+
+Reducción de errores: Al separar las ramas, se minimiza el riesgo de introducir errores en la rama principal.
+
+Escalabilidad: Es ideal para proyectos grandes y de larga duración, donde la coordinación y la estabilidad del código son fundamentales.
 
 ---
 
