@@ -173,6 +173,7 @@ Reducción de errores: Al separar las ramas, se minimiza el riesgo de introducir
 Escalabilidad: Es ideal para proyectos grandes y de larga duración, donde la coordinación y la estabilidad del código son fundamentales.
 
 ---
+![Pregunta3](images/cp10.png)
 
 ## Pregunta 4 (2 puntos)
 
