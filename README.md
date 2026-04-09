@@ -335,30 +335,31 @@ En este caso, el conflicto se produjo porque `ramaA` y `ramaB` tenían el mismo 
 
 **📝 Respuesta:**
 
-<!-- Escribe aquí tu respuesta completa a la Pregunta 6 -->
-## Pregunta 6 (2 puntos)
 
-**Realizar limpieza, explicar versionamiento semántico y enviar cambios al repositorio original**
+MAJOR (X.y.z): Se incrementa cuando se realizan cambios incompatibles con versiones anteriores. Ejemplo: pasar de 1.0.0 a 2.0.0 indica que hay cambios que rompen compatibilidad.
 
----
+MINOR (x.Y.z): Se incrementa cuando se agregan nuevas funcionalidades compatibles con versiones anteriores. Ejemplo: 1.1.0 indica que se añadió una nueva característica sin romper compatibilidad.
 
-### Procedimiento realizado
+PATCH (x.y.Z): Se incrementa cuando se corrigen errores o se hacen cambios menores sin afectar compatibilidad. Ejemplo: 1.1.1 indica que se corrigió un bug.
 
-1. Se trabajó en la rama `develop` del fork del repositorio.  
-2. Se eliminaron los archivos `archivoA.txt` y `archivoB.txt` creados en preguntas anteriores:  
-   ```bash
-   git rm archivoA.txt
-   git rm archivoB.txt
-   git commit -m "Eliminar archivos temporales archivoA.txt y archivoB.txt"
-Se realizó un merge desde develop hacia main en el repositorio local
-git checkout main
-git merge develop
-Con esto se sincronizan los cambios de la rama de desarrollo con la rama principal, garantizando que el código estable refleje el trabajo realizado.
+Ejemplo completo de evolución:
 
-Se enviaron los cambios de la rama main local hacia la rama develop del repositorio remoto (fork), incluyendo todos los tags creados:
-git push origin main
-git push origin develop
-git push origin --tags
-Los tags creados fueron: Pregunta1, Pregunta2, Pregunta3, Pregunta4, Pregunta5, y el tag adicional Version Final. Estos tags permiten identificar hitos importantes en el desarrollo y facilitan el seguimiento de cada entrega.
+1.0.0 → Primera versión estable.
 
-Finalmente, se creó un Pull Request desde la rama develop del fork hacia la rama main del repositorio original.
+1.1.0 → Se añadió una nueva funcionalidad.
+
+1.1.1 → Se corrigió un bug.
+
+2.0.0 → Cambios mayores que rompen compatibilidad.
+
+Este sistema facilita la comunicación entre desarrolladores y usuarios, ya que permite entender rápidamente el tipo de cambios introducidos en cada versión.
+Evidencias
+Las capturas de pantalla del proceso (eliminación de archivos, merge, push con tags y creación del PR) se encuentran en la carpeta: images/
+
+Pull Request
+Número del PR: #3
+
+Enlace al PR: https://github.com/Sax300-cpu/EVALUACION_1P/pull/3
+
+
+![Pregunta6](images/cpFinal.png)
