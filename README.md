@@ -179,28 +179,42 @@ Escalabilidad: Es ideal para proyectos grandes y de larga duración, donde la co
 
 **Trabajo con Issues y Pull Requests**
 
-### Parte teórica:
+---
 
-- ¿Qué es un Pull Request y cuál es su función dentro de un flujo de trabajo colaborativo con Git y GitHub?
-- ¿Por qué es importante revisar un Pull Request antes de fusionarlo con la rama principal?
-- ¿Qué tipo de observaciones o validaciones se suelen realizar durante la revisión de un Pull Request?
+### Parte teórica
 
-### Parte práctica:
+- **¿Qué es un Pull Request y cuál es su función dentro de un flujo de trabajo colaborativo con Git y GitHub?**  
+  Un *Pull Request* (PR) es una solicitud para fusionar cambios desde una rama hacia otra en un repositorio. Su función principal es permitir que otros colaboradores revisen, comenten y aprueben los cambios antes de integrarlos en la rama principal.
 
-- Trabajar en la rama `develop`, ya existente desde la configuración de Git Flow.
-- Realizar los cambios necesarios en este archivo `README.md` para responder las preguntas.
-- Realizar un **commit** con los cambios de la primera pregunta y subirlo a la rama `develop` del repositorio remoto.
-- Crear un **pull request** desde `develop` hacia `main` en GitHub, con el nombre `"Pregunta 4 - Apellido Nombre"`.
-- Crear comentarios solicitando: 1. que se agregue la respuesta de la segunda pregunta y luego agregando la respuesta con el respectivo commit; y 2. el mismo procedimiento para la tercera pregunta.
-- **Aprobar** el pull request para que se haga el merge respectivo hacia `main`.
+- **¿Por qué es importante revisar un Pull Request antes de fusionarlo con la rama principal?**  
+  Porque garantiza la calidad del código, evita introducir errores en la rama estable y permite detectar problemas de estilo, seguridad o funcionalidad antes de que lleguen a producción.
 
-### En la sección de respuesta, se debe incluir:
+- **¿Qué tipo de observaciones o validaciones se suelen realizar durante la revisión de un Pull Request?**  
+  - Validación de la lógica y funcionalidad del código.  
+  - Revisión de estándares de estilo y buenas prácticas.  
+  - Verificación de pruebas unitarias y resultados en CI/CD.  
+  - Comentarios sobre documentación o claridad del código.  
+  - Confirmación de que no se rompen otras partes del sistema.
 
-- Un resumen del procedimiento realizado con las respectivas preguntas y capturas.
-- El número y enlace al pull request.
+---
 
-**📝 Respuesta:**
+### Parte práctica
 
+1. Se trabajó en la rama `develop` creada previamente con Git Flow.  
+2. Se editó el archivo `README.md` para responder la primera pregunta teórica y se realizó un commit en `develop`.  
+3. Se creó un **Pull Request** desde `develop` hacia `main` en GitHub con el nombre:  
+   **"Pregunta 4 - Apellido Nombre"**.  
+4. En el PR se añadieron comentarios solicitando que se agregue la respuesta de la segunda pregunta.  
+   - Se realizó el commit con la respuesta y se actualizó el PR.  
+5. Se repitió el procedimiento para la tercera pregunta: comentario → commit → actualización del PR.  
+6. Finalmente, se **aprobó el Pull Request** y se realizó el merge hacia `main`.
+
+---
+
+### Evidencias
+
+![Pregunta4](images/cp11.png)
+![Pregunta4](images/cp12.png)
 <!-- Escribe aquí tu respuesta completa a la Pregunta 4 -->
 
 ---
