@@ -1,10 +1,11 @@
-# Universidad [Nombre de la Universidad]  
-## Facultad de [Nombre de la Facultad]  
-### Carrera de [Nombre de la Carrera]  
+# Evaluación Práctica – Primer Parcial
+**Estudiante:** Kevin  
+**Universidad:** [Universidad Tecnica de Ambato]  
+**Carrera:** [Software]  
 
 **Asignatura:** Manejo y Configuración de Software  
-**Nombre del Estudiante:** ___________________________  
-**Fecha:** ___________________  
+**Nombre del Estudiante:** Kevin Velasco
+**Fecha:** 08/04/2026
 
 ---
 
@@ -119,36 +120,101 @@ En este caso se configuró para ignorar:
 
 **📝 Respuesta:**
 
-<!-- Escribe aquí tu respuesta completa a la Pregunta 3 -->
+# 1. Inicializar Git Flow en el repositorio
+git flow init
+# (Aceptar las ramas por defecto: main y develop)
+
+# 2. Crear la rama de tipo feature
+git flow feature start ingresar-encabezado
+
+# 3. Editar el README.md y agregar el encabezado con tus datos personales
+# (ejemplo: Nombre completo, Universidad, Carrera, etc.)
+
+# 4. Hacer al menos un commit durante el desarrollo
+git add README.md
+git commit -m "Agregar encabezado con datos personales en README"
+
+# 5. Finalizar la rama feature siguiendo Git Flow
+git flow feature finish ingresar-encabezado
+
+# 6. Subir los cambios y tags al remoto
+git push origin develop
+git push origin main
+git push origin --tags
+
+# 7. Crear el tag final para la pregunta
+git tag "Pregunta3"
+git push origin main --tags
+
+Proceso seguido
+Inicialización de Git Flow: Se configuró el repositorio para trabajar con las ramas principales main (producción) y develop (desarrollo).
+
+Creación de la rama feature: Se abrió una rama feature/ingresar-encabezado para desarrollar la nueva funcionalidad sin afectar directamente a develop o main.
+
+Desarrollo: Se editó el archivo README.md para completar el encabezado con los datos personales del estudiante.
+
+Commits intermedios: Se realizaron commits para registrar el progreso del desarrollo.
+
+Finalización de la feature: Con git flow feature finish, la rama se fusionó en develop y se eliminó la rama temporal.
+
+Push al remoto: Se subieron los cambios a GitHub en las ramas correspondientes.
+
+Tag final: Se creó el tag "Pregunta3" en el commit final, cumpliendo con la consigna
+
+Reflexión sobre las ventajas de Git Flow
+Organización clara: Git Flow establece un flujo estructurado con ramas específicas para producción (main), desarrollo (develop), nuevas funcionalidades (feature), correcciones rápidas (hotfix) y versiones (release).
+
+Trabajo colaborativo: Facilita que varios desarrolladores trabajen en paralelo sin interferir entre sí, ya que cada funcionalidad se desarrolla en su propia rama.
+
+Control de versiones: Permite mantener un historial ordenado y saber exactamente qué cambios están listos para producción y cuáles aún están en desarrollo.
+
+Reducción de errores: Al separar las ramas, se minimiza el riesgo de introducir errores en la rama principal.
+
+Escalabilidad: Es ideal para proyectos grandes y de larga duración, donde la coordinación y la estabilidad del código son fundamentales.
 
 ---
+![Pregunta3](images/cp10.png)
 
 ## Pregunta 4 (2 puntos)
 
 **Trabajo con Issues y Pull Requests**
 
-### Parte teórica:
+---
 
-- ¿Qué es un Pull Request y cuál es su función dentro de un flujo de trabajo colaborativo con Git y GitHub?
-- ¿Por qué es importante revisar un Pull Request antes de fusionarlo con la rama principal?
-- ¿Qué tipo de observaciones o validaciones se suelen realizar durante la revisión de un Pull Request?
+### Parte teórica
 
-### Parte práctica:
+- **¿Qué es un Pull Request y cuál es su función dentro de un flujo de trabajo colaborativo con Git y GitHub?**  
+  Un *Pull Request* (PR) es una solicitud para fusionar cambios desde una rama hacia otra en un repositorio. Su función principal es permitir que otros colaboradores revisen, comenten y aprueben los cambios antes de integrarlos en la rama principal.
 
-- Trabajar en la rama `develop`, ya existente desde la configuración de Git Flow.
-- Realizar los cambios necesarios en este archivo `README.md` para responder las preguntas.
-- Realizar un **commit** con los cambios de la primera pregunta y subirlo a la rama `develop` del repositorio remoto.
-- Crear un **pull request** desde `develop` hacia `main` en GitHub, con el nombre `"Pregunta 4 - Apellido Nombre"`.
-- Crear comentarios solicitando: 1. que se agregue la respuesta de la segunda pregunta y luego agregando la respuesta con el respectivo commit; y 2. el mismo procedimiento para la tercera pregunta.
-- **Aprobar** el pull request para que se haga el merge respectivo hacia `main`.
+- **¿Por qué es importante revisar un Pull Request antes de fusionarlo con la rama principal?**  
+  Porque garantiza la calidad del código, evita introducir errores en la rama estable y permite detectar problemas de estilo, seguridad o funcionalidad antes de que lleguen a producción.
 
-### En la sección de respuesta, se debe incluir:
+- **¿Qué tipo de observaciones o validaciones se suelen realizar durante la revisión de un Pull Request?**  
+  - Validación de la lógica y funcionalidad del código.  
+  - Revisión de estándares de estilo y buenas prácticas.  
+  - Verificación de pruebas unitarias y resultados en CI/CD.  
+  - Comentarios sobre documentación o claridad del código.  
+  - Confirmación de que no se rompen otras partes del sistema.
 
-- Un resumen del procedimiento realizado con las respectivas preguntas y capturas.
-- El número y enlace al pull request.
+---
 
-**📝 Respuesta:**
+### Parte práctica
 
+1. Se trabajó en la rama `develop` creada previamente con Git Flow.  
+2. Se editó el archivo `README.md` para responder la primera pregunta teórica y se realizó un commit en `develop`.  
+3. Se creó un **Pull Request** desde `develop` hacia `main` en GitHub con el nombre:  
+   **"Pregunta 4 - Apellido Nombre"**.  
+4. En el PR se añadieron comentarios solicitando que se agregue la respuesta de la segunda pregunta.  
+   - Se realizó el commit con la respuesta y se actualizó el PR.  
+5. Se repitió el procedimiento para la tercera pregunta: comentario → commit → actualización del PR.  
+6. Finalmente, se **aprobó el Pull Request** y se realizó el merge hacia `main`.
+
+---
+
+### Evidencias
+
+![Pregunta4](images/cp11.png)
+![Pregunta4](images/cp12.png)
 <!-- Escribe aquí tu respuesta completa a la Pregunta 4 -->
 
 ---
