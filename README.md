@@ -336,3 +336,29 @@ En este caso, el conflicto se produjo porque `ramaA` y `ramaB` tenían el mismo 
 **📝 Respuesta:**
 
 <!-- Escribe aquí tu respuesta completa a la Pregunta 6 -->
+## Pregunta 6 (2 puntos)
+
+**Realizar limpieza, explicar versionamiento semántico y enviar cambios al repositorio original**
+
+---
+
+### Procedimiento realizado
+
+1. Se trabajó en la rama `develop` del fork del repositorio.  
+2. Se eliminaron los archivos `archivoA.txt` y `archivoB.txt` creados en preguntas anteriores:  
+   ```bash
+   git rm archivoA.txt
+   git rm archivoB.txt
+   git commit -m "Eliminar archivos temporales archivoA.txt y archivoB.txt"
+Se realizó un merge desde develop hacia main en el repositorio local
+git checkout main
+git merge develop
+Con esto se sincronizan los cambios de la rama de desarrollo con la rama principal, garantizando que el código estable refleje el trabajo realizado.
+
+Se enviaron los cambios de la rama main local hacia la rama develop del repositorio remoto (fork), incluyendo todos los tags creados:
+git push origin main
+git push origin develop
+git push origin --tags
+Los tags creados fueron: Pregunta1, Pregunta2, Pregunta3, Pregunta4, Pregunta5, y el tag adicional Version Final. Estos tags permiten identificar hitos importantes en el desarrollo y facilitan el seguimiento de cada entrega.
+
+Finalmente, se creó un Pull Request desde la rama develop del fork hacia la rama main del repositorio original.
