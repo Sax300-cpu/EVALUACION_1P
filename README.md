@@ -80,9 +80,18 @@ git pull: Comando de Git que actualiza tu repositorio local trayendo los cambios
 
 **📝 Respuesta:**
 
-<!-- Escribe aquí tu explicación y evidencia para la Pregunta 2 -->
+El archivo `.gitignore` permite definir qué archivos o carpetas no deben ser rastreados por Git.  
+En este caso se configuró para ignorar:
+- Archivos `.log`
+- Carpeta `temp/`
+- Archivos `.md` y `.txt` dentro de la carpeta `doc/`
 
----
+
+---EVIDENCIAS
+![Pregunta2](images/cp6.png)
+![Pregunta2](images/cp7.png)
+![Pregunta2](images/cp8.png)
+![Pregunta2](images/cp9.png)
 
 ## Pregunta 3 (2 puntos)
 
